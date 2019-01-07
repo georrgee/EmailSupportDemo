@@ -18,23 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paper_airplane_logo" translatesAutoresizingMaskIntoConstraints="NO" id="7Zc-KK-0DZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper_airplane_logo" translatesAutoresizingMaskIntoConstraints="NO" id="7Zc-KK-0DZ">
                                 <rect key="frame" x="37" y="153" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Bzj-lp-1ZG"/>
+                                    <constraint firstAttribute="height" constant="300" id="hnD-fG-xLi"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="452-oc-U9y">
-                                <rect key="frame" x="164" y="597" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="452-oc-U9y">
+                                <rect key="frame" x="110" y="597" width="154" height="30"/>
+                                <color key="backgroundColor" red="0.89962498951802572" green="0.23320735959331854" blue="0.047221378780441789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="WDZ-4O-Ta6"/>
+                                    <constraint firstAttribute="height" constant="30" id="pX5-jb-Li3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="22"/>
+                                <state key="normal" title="Send Email">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rPD-2E-dAk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Zc-KK-0DZ" secondAttribute="trailing" constant="38" id="DfX-xY-w1Q"/>
+                            <constraint firstItem="452-oc-U9y" firstAttribute="top" secondItem="7Zc-KK-0DZ" secondAttribute="bottom" constant="144" id="LUH-wz-S2w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="452-oc-U9y" secondAttribute="bottom" constant="151" id="PoE-yT-zuQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="452-oc-U9y" secondAttribute="trailing" constant="111" id="R2B-qe-GXV"/>
+                            <constraint firstItem="452-oc-U9y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="WiS-y4-Kv9"/>
+                            <constraint firstItem="7Zc-KK-0DZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="hgz-DO-GFu"/>
+                            <constraint firstItem="7Zc-KK-0DZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="hlB-rJ-Rk7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="sendButton" destination="452-oc-U9y" id="Wo9-3A-van"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-396" y="128"/>
+            <point key="canvasLocation" x="-396" y="127.83251231527095"/>
         </scene>
     </scenes>
     <resources>
