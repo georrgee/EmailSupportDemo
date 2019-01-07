@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		36E7A68521E3E73800E04B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E7A68421E3E73800E04B64 /* AppDelegate.swift */; };
-		36E7A68721E3E73800E04B64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E7A68621E3E73800E04B64 /* ViewController.swift */; };
 		36E7A68A21E3E73800E04B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E7A68821E3E73800E04B64 /* Main.storyboard */; };
-		36E7A68C21E3E73900E04B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E7A68B21E3E73900E04B64 /* Assets.xcassets */; };
 		36E7A68F21E3E73900E04B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E7A68D21E3E73900E04B64 /* LaunchScreen.storyboard */; };
+		36E7A69721E3EBB500E04B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E7A69621E3EBB500E04B64 /* Assets.xcassets */; };
+		36E7A69921E3ED0200E04B64 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E7A69821E3ED0200E04B64 /* EmailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36E7A68121E3E73800E04B64 /* EmailSupportDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailSupportDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E7A68421E3E73800E04B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36E7A68621E3E73800E04B64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36E7A68921E3E73800E04B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		36E7A68B21E3E73900E04B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36E7A68E21E3E73900E04B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36E7A69021E3E73900E04B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36E7A69621E3EBB500E04B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36E7A69821E3ED0200E04B64 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				36E7A68421E3E73800E04B64 /* AppDelegate.swift */,
-				36E7A68621E3E73800E04B64 /* ViewController.swift */,
+				36E7A69821E3ED0200E04B64 /* EmailViewController.swift */,
 				36E7A68821E3E73800E04B64 /* Main.storyboard */,
-				36E7A68B21E3E73900E04B64 /* Assets.xcassets */,
 				36E7A68D21E3E73900E04B64 /* LaunchScreen.storyboard */,
 				36E7A69021E3E73900E04B64 /* Info.plist */,
+				36E7A69621E3EBB500E04B64 /* Assets.xcassets */,
 			);
 			path = EmailSupportDemo;
 			sourceTree = "<group>";
@@ -123,8 +123,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				36E7A68F21E3E73900E04B64 /* LaunchScreen.storyboard in Resources */,
-				36E7A68C21E3E73900E04B64 /* Assets.xcassets in Resources */,
 				36E7A68A21E3E73800E04B64 /* Main.storyboard in Resources */,
+				36E7A69721E3EBB500E04B64 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36E7A68721E3E73800E04B64 /* ViewController.swift in Sources */,
 				36E7A68521E3E73800E04B64 /* AppDelegate.swift in Sources */,
+				36E7A69921E3ED0200E04B64 /* EmailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
